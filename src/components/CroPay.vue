@@ -1,5 +1,5 @@
 <template>
-  <div id="pay-button" data-payment-id="38215c0c-0bea-428b-9ff1-e789c7ded960"></div>
+  <div id="pay-button" v-bind="{ 'data-payment-id': paymentId }"></div>
 </template>
 
 <script>
@@ -59,7 +59,9 @@ export default {
   },
 
   data() {
-    return {}
+    return {
+      paymentId: null
+    }
   }
 }
 </script>
